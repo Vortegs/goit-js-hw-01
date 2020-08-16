@@ -1,4 +1,4 @@
-const countryName = null;
+const countryName = 'ямайКа';
 
 const CANCELED_BY_USER = 'Отменено пользователем!';
 const NO_DELIVERY = 'В выбранную страну доставка недоступна.';
@@ -16,16 +16,16 @@ if (countryName === null) {
   country = countryName[0].toUpperCase() + countryName.slice(1).toLowerCase();
 
   switch (country) {
-    case 'Китай':
+    case CHINA:
       price = 100;
       break;
-    case 'Австралия ':
+    case AUSTRALIA:
       price = 170;
       break;
-    case 'Индия':
+    case INDIA:
       price = 80;
       break;
-    case 'Ямайка':
+    case JAMAICA:
       price = 120;
       break;
     default:
